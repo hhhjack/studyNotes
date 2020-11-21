@@ -1006,3 +1006,23 @@ https://zhuanlan.zhihu.com/p/92407628
 3. 
 
 ### 6.vue路由
+
+
+
+# 12.实习学习规划
+
+### 1.前端
+
+- html5+css3
+- js
+- html dom
+- jquery
+- ajax
+
+### 2.后端
+
+- nodejs
+- mongodb
+- express
+- restify
+- git使用
