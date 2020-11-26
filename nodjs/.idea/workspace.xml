@@ -20,16 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892074d3-26c0-4285-b410-49b57c051d1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/requestHandlers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/01.helloNode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/02.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/03.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/04.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/05.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/helloModule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/requestHandlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo/requestHandlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606380900901</updated>
-      <workItem from="1606380902056" duration="8582000" />
+      <workItem from="1606380902056" duration="10105000" />
     </task>
     <servers />
   </component>
@@ -112,5 +107,9 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="478" y="80" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1606382886578" />
+    <state x="769" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1606398034580">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="769" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1474.864@0.0.1474.864" timestamp="1606398034580" />
   </component>
 </project>
