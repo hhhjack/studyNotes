@@ -566,8 +566,9 @@ $("div").class("width");
 ##### 7.jQuery事件委托
 
 - 什么是事件委托
-  - 请别人帮忙做事情，然后将做完的结果反馈给我们
-
+  
+- 请别人帮忙做事情，然后将做完的结果反馈给我们
+  
 - 在jQuery中，若通过核心函数找到的元素不止一个，那么添加事件的时候jQuery会遍历所有找到的元素给它们添加事件
 
 - ```js
@@ -656,4 +657,141 @@ $("div").class("width");
     });
     ```
 
-p44
+##### 3.淡入淡出动画
+
+- 淡入动画
+
+  - ```js
+    $("div").fadeIn(1000, function(){
+    	alert("淡入完毕");
+    });
+    ```
+
+- 淡出动画
+
+  - ```js
+    $("div").fadeOut(1000, function(){
+    	alert("淡出完毕");
+    });
+    ```
+
+- 切换动画
+
+  - ```js
+    $("div").fadeToggle(1000, function(){
+    	alert("切换完毕");
+    });
+    ```
+
+- 控制透明度
+
+  - ```js
+    $("div").fadeTo(1000, 0.5,  function(){
+    	alert("淡入完毕");
+    });
+    ```
+
+##### 4.自定义属性
+
+- 操作属性
+
+  - ```js
+    //三个参数
+    $("div").animate({
+        width: 500
+    }, 1000,function(){
+       alert("自定义动画执行完毕")； 
+    });
+    ```
+
+  - ```js
+    //四个参数
+    $("div").animate({
+        margin-left: 500
+    }, 5000, "linear",function(){
+       alert("自定义动画执行完毕")； 
+    });
+    ```
+
+  - 参数
+
+    - 第一个参数： 接受一个对象，可以在对象中修改属性
+    - 第二个参数： 指定动画时长
+    - 第三个参数： 指定动画节奏，默认的就是swing
+    - 第四个参数：动画执行完毕之后的回调函数
+
+- 累加属性
+
+  - ```js
+    $("div").animate({
+        width: "+=500"
+    }, 1000,function(){
+       alert("自定义动画执行完毕")； 
+    });
+    ```
+
+- 关键字
+
+  - ```js
+    $("div").animate({
+        width: "hide"
+    }, 1000,function(){
+       alert("自定义动画执行完毕")； 
+    });
+    ```
+
+
+
+##### 5.stop和delay方法
+
+- 在jQuery的{}中可以同时修改多个属性，多个属性动画也会同时执行
+
+- delay
+
+  - ```js
+    //先执行宽度等两秒再执行高度动画
+    $("div").animate({
+        width: 500
+    }, 1000).delay(2000).animate({
+        height: 500
+    }, 1000);
+    ```
+
+- stop
+
+  - ```js
+    //先执行宽度等两秒再执行高度动画
+    $("div").animate({
+        width: 500
+    }, 1000).animate({
+        height: 500
+    }, 1000).animate({
+        width: 100
+    }, 1000).animate({
+        height: 100
+    }, 1000);
+    
+    //立即停止当前动画，继续执行后续动画
+    $("div").stop();
+    
+    //立即停止当前和后续动画
+    $("div").stop(true);
+    
+    //立即完场当前动画，继续执行后续动画
+    $("div").stop(false, true);
+    
+    //立即完成当前的，并且停止后续所有动画
+    $("div").stop(true, true);
+    ```
+
+##### 6.设置
+
+- jQuery.fx.off
+  - 执行一个禁用的动画，默认为打开的
+  - 赋值：jQuery.fx.off = true
+
+- jQuery.fx.interval
+  - 设置动画的显示帧数
+  - 赋值：jQuery.fx.interval = 100
+
+52p
