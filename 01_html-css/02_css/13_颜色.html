@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            /* 
+                颜色单位
+                    在css中可以直接使用颜色名字来设置各种颜色   
+                        比如： red，green，...
+                        但是在css中直接使用颜色名是非常不方便的
+
+                    RGB值：
+                        - rgb通过三种颜色的不同浓度来调配出不同的颜色
+                        - red green blue
+                        - 每一中颜色的范围在 0 - 255 (0% - 100%) 之间
+
+                    RGBA
+                        - A 透明
+                        - 1：完全不透明 2： 完全透明
+
+                    十六进制的rgb值：
+                        - 语法： 红绿蓝
+                        - 颜色浓度通过00-ff
+                        - 如果两两重复可以简写
+                            #aabbcc -> #abc
+
+                    HSL值 HSLA值
+                        H 色相(0 - 360)
+                        S 饱和度, 颜色浓度(0% - 100%)
+                        L 亮度, 颜色亮度(0% - 100%)
+             */
+            /* background-color: red; */
+            background-color: rgb(0,255,0);
+            background-color: rgb(255,0,0);
+            background-color: rgb(0,0,255);
+            background-color: rgb(0,0,0);
+            background-color: rgb(255,255,255);
+            background-color: rgba(255,123,123,0.5);
+            background-color: #ff0000;
+            background-color: #abc;
+            background-color: hsla(0, 100%, 50%,0.5);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="box1"></div>
+
+</body>
+</html>

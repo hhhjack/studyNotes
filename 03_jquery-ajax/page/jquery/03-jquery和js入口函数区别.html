@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <script src='./../../js/jquery-1.12.4.min.js'></script>
+    <script>
+
+        window.onload = function(ev){
+            //js入口
+            var img = document.getElementsByTagName("img")[0];
+            console.log(img);
+            //js获取dom元素宽高
+            var width = window.getComputedStyle(img).width;
+            console.log("load",width);
+        }
+
+        $(document).ready(function () {
+            //通过jQuery入口函数可以拿到dom元素
+            var $img = $("img")[0];
+            console.log($img);
+            //jQuery
+            var $width = $img.width();
+            console.log($width);
+        })
+    </script>
+</head>
+
+<body>
+    <img src="./../img/logo.png" alt="">
+</body>
+
+</html>

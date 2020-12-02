@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box1{/*id*/
+            color: orange;
+        }
+
+        div{/*元素*/
+            color: yellow;
+        }
+
+        .red{/*类*/
+            color: red !important;
+            font-size: 20px;
+        }
+
+        div#box1{
+            color: blue;
+        }
+
+        div,p,span{
+            color: green;
+        }
+        
+
+        /* 
+            样式冲突
+                - 当我们用不同的选择器选择相同的元素，并且为相同的样式设置不同的值时，此时就发生了样式的冲突，
+            
+            发生样式冲突时，应用哪个样式由选择器的权重（优先级）决定
+
+            选择器的权重
+                内联样式（行内样式）  1,0,0,0
+                id选择器             0,1,0,0
+                类和伪类选择器        0,0,1,0
+                元素选择器            0,0,0,1
+                通配选择器            0,0,0,0
+                继承的样式            无优先级
+
+            比较优先级时，需要将所有的选择器的优先级进行相加计算，最后由新阿基越高，则越优先显示（分组选择器时单独计算的）
+                选择器的累加不会超过器最大的数量级，类选择器再高也不会超过id选择器
+                如果优先级计算后相等，此时则优先使用靠下的样式
+
+            可以在某一个样式的后面添加!important，则此时样式会获取到最高的优先级，甚至超过内联样式，
+                注意： 在开发中这个玩意一定要慎用！
+         */
+
+        *{
+            font-size: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- style="color: teal;"//内联 -->
+    <div id="box1" class="red" style="color: chocolate;">
+        我是一个div
+        <span>我是div中的span</span>
+    </div>
+</body>
+</html>

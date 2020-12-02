@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 20px;
+        }
+        /* 
+            伪元素，表示也买那种一些特殊的并不真实的存在的元素（特殊位置）
+                伪元素使用::开头
+
+                ::first-letter 第一个字母
+                ::first-line 第一行
+                ::selection 表示选中内容
+
+                ::before 元素开始位置
+                ::after 元素结束位置
+                    - 必须结合content属性来使用
+        */
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color:  yellow;
+        }
+        p::selection{
+            background-color: teal;
+        }
+        /* div::before{
+            content: 'abc';
+            color: red;
+        }
+        div::after{
+            content: 'haha';
+            color: blue;
+        } */
+        div::before{
+            content: '[';
+        }
+        div::after{
+            content: ']';
+        }
+    </style>
+</head>
+<body>
+    <q>hello</q>
+
+    <div>hello hello How are you</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, architecto cum! Optio, harum! Molestiae debitis nesciunt architecto eius tempora, aliquam doloremque labore odio, eos id eligendi illo recusandae vero nostrum.</p>
+
+</body>
+</html>
